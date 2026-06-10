@@ -6,7 +6,7 @@
     android:layout_height="match_parent">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/RegistrationTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
@@ -19,7 +19,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/EditTextRegistration1"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="100dp"
@@ -30,10 +30,10 @@
         android:text="Name"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/RegistrationTitle" />
 
     <TextView
-        android:id="@+id/textView8"
+        android:id="@+id/TextViewRegistration1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -41,13 +41,13 @@
         android:text="Vārds"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration1"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextText" />
+        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration1" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/EditTextRegistration2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
@@ -58,10 +58,10 @@
         android:text="Surname"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration1" />
 
     <EditText
-        android:id="@+id/editTextText3"
+        android:id="@+id/EditTextRegistration3"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
@@ -72,10 +72,10 @@
         android:text=" Username"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration2" />
 
     <EditText
-        android:id="@+id/editTextText4"
+        android:id="@+id/EditTextRegistration4"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
@@ -86,10 +86,10 @@
         android:text=" Password"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration3" />
 
     <EditText
-        android:id="@+id/editTextText5"
+        android:id="@+id/EditTextRegistration5"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
@@ -100,10 +100,10 @@
         android:text=" Password"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText4" />
+        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration4" />
 
     <TextView
-        android:id="@+id/textView10"
+        android:id="@+id/TextViewRegistration2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -111,13 +111,13 @@
         android:text="Uzvārds"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration2"
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextText2" />
+        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration2" />
 
     <TextView
-        android:id="@+id/textView9"
+        android:id="@+id/TextViewRegistration3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -125,13 +125,13 @@
         android:text="Lietotājvārds"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText2"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration2"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextText3" />
+        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration3" />
 
     <TextView
-        android:id="@+id/textView11"
+        android:id="@+id/TextViewRegistration4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -139,13 +139,13 @@
         android:text="Parole:"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText4"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration4"
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextText4" />
+        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration4" />
 
     <TextView
-        android:id="@+id/textView12"
+        android:id="@+id/TextViewRegistration5"
         android:layout_width="92dp"
         android:layout_height="55dp"
         android:fontFamily="sans-serif-condensed"
@@ -153,13 +153,13 @@
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/editTextText5"
+        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration5"
         app:layout_constraintHorizontal_bias="0.773"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editTextText5" />
+        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration5" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/RegistrationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:backgroundTint="#009688"
