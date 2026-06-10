@@ -162,6 +162,7 @@
         android:id="@+id/RegistrationButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
         android:backgroundTint="#009688"
         android:fontFamily="sans-serif-condensed"
         android:text="Reģistreties"
@@ -169,8 +170,8 @@
         android:textSize="24sp"
         android:textStyle="bold"
         app:cornerRadius="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="592dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
