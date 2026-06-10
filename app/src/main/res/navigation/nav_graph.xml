@@ -9,7 +9,7 @@
         android:id="@+id/FirstFragment"
         android:name="com.example.music.FirstFragment"
         android:label="@string/first_fragment_label"
-        tools:layout="@layout/fragment_first" >
+        tools:layout="@layout/login_page" >
 
         <action
             android:id="@+id/action_FirstFragment_to_SecondFragment"
@@ -19,10 +19,11 @@
         android:id="@+id/SecondFragment"
         android:name="com.example.music.SecondFragment"
         android:label="@string/second_fragment_label"
-        tools:layout="@layout/fragment_second" >
+        tools:layout="@layout/registration_logs" >
 
         <action
             android:id="@+id/action_SecondFragment_to_FirstFragment"
             app:destination="@id/FirstFragment" />
     </fragment>
+
 </navigation>
