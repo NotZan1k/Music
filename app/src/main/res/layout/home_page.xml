@@ -9,7 +9,7 @@
     android:fitsSystemWindows="true">
 
     <LinearLayout
-        android:id="@+id/HomeTitleBox"
+        android:id="@+id/HomeHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -24,9 +24,7 @@
             android:id="@+id/homeLogUserImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@android:drawable/btn_default"
-            android:importantForAccessibility="no"
-            tools:ignore="ImageContrastCheck" />
+            android:background="@android:drawable/btn_default" />
 
         <TextView
             android:id="@+id/homeLogTitle"
@@ -38,8 +36,7 @@
             android:text="@string/home_title"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:textStyle="bold"
-            tools:ignore="VisualLintSystemUi" />
+            android:textStyle="bold" />
 
         <ImageButton
             android:id="@+id/homeLogSearchButton"
@@ -69,7 +66,7 @@
         android:paddingHorizontal="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/HomeTitleBox">
+        app:layout_constraintTop_toBottomOf="@+id/HomeHeader">
 
         <ImageButton
             android:id="@+id/homeLogFilterButton"
@@ -82,97 +79,103 @@
 
     </LinearLayout>
 
-    <LinearLayout
-        android:id="@+id/HomeMainContent"
+    <ScrollView
+        android:id="@+id/homeScrollView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:orientation="vertical"
-        android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/selectPageBox"
+        app:layout_constraintBottom_toTopOf="@+id/HomeNavigationBottom"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/HomeFilterBox">
 
         <LinearLayout
+            android:id="@+id/HomeMainContent"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:orientation="horizontal"
-            tools:ignore="UseCompoundDrawables">
+            android:orientation="vertical"
+            android:padding="16dp">
 
-            <ImageView
-                android:id="@+id/homeLogImagePlaylist1"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:background="#D9D9D9"
-                android:importantForAccessibility="no" />
-
-            <TextView
-                android:id="@+id/homeLogTitlePlylist1"
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="20dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="@string/home_playlist_title1"
-                android:textSize="20sp" />
-        </LinearLayout>
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
-            android:importantForAccessibility="no"
-            android:orientation="horizontal"
-            tools:ignore="UseCompoundDrawables">
+                <ImageView
+                    android:id="@+id/homeLogImagePlaylist1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#D9D9D9"
+                    android:importantForAccessibility="no" />
 
-            <ImageView
-                android:id="@+id/homeLogImagePlaylist2"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
+                <TextView
+                    android:id="@+id/homeLogTitlePlylist1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/home_playlist_title1"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
                 android:importantForAccessibility="no"
-                android:background="#D9D9D9" />
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
-            <TextView
-                android:id="@+id/homeLogTitlePlylist2"
-                android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/homeLogImagePlaylist2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:importantForAccessibility="no"
+                    android:background="#D9D9D9" />
+
+                <TextView
+                    android:id="@+id/homeLogTitlePlylist2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/home_playlist_title2"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="20dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="@string/home_playlist_title_2"
-                android:textSize="20sp" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:importantForAccessibility="no"
-            android:orientation="horizontal"
-            tools:ignore="UseCompoundDrawables">
-
-            <ImageView
-                android:id="@+id/homeLogImagePlaylist3"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
                 android:importantForAccessibility="no"
-                android:background="#D9D9D9" />
+                android:orientation="horizontal"
+                tools:ignore="UseCompoundDrawables">
 
-            <TextView
-                android:id="@+id/homeLogTitlePlylist3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:layout_marginStart="20dp"
-                android:fontFamily="sans-serif-condensed"
-                android:text="@string/home_plalist_title3"
-                android:textSize="20sp" />
+                <ImageView
+                    android:id="@+id/homeLogImagePlaylist3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:importantForAccessibility="no"
+                    android:background="#D9D9D9" />
+
+                <TextView
+                    android:id="@+id/homeLogTitlePlylist3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="20dp"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@string/home_playlist_title3"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
         </LinearLayout>
-
-    </LinearLayout>
+    </ScrollView>
 
     <LinearLayout
-        android:id="@+id/selectPageBox"
+        android:id="@+id/HomeNavigationBottom"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="bottom"
@@ -193,7 +196,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="0dp"
-            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck,VisualLintButtonSize" />
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck" />
 
         <Button
             android:id="@+id/homeLogButtonSearch"
@@ -206,7 +209,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="0dp"
-            tools:ignore="ButtonStyle,VisualLintButtonSize" />
+            tools:ignore="ButtonStyle" />
 
         <Button
             android:id="@+id/homeLogButtonProfile"
@@ -219,7 +222,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="0dp"
-            tools:ignore="ButtonStyle,VisualLintButtonSize" />
+            tools:ignore="ButtonStyle" />
 
     </LinearLayout>
 
