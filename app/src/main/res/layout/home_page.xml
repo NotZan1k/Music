@@ -5,10 +5,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFFFFF">
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
 
     <LinearLayout
-        android:id="@+id/linearLayout1"
+        android:id="@+id/HomeTitleBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -23,7 +24,9 @@
             android:id="@+id/homeLogUserImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@android:drawable/btn_default" />
+            android:background="@android:drawable/btn_default"
+            android:importantForAccessibility="no"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/homeLogTitle"
@@ -32,68 +35,77 @@
             android:layout_marginStart="12dp"
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
-            android:text="Home"
+            android:text="@string/home_title"
             android:textAlignment="center"
             android:textSize="30sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:ignore="VisualLintSystemUi" />
 
         <ImageButton
             android:id="@+id/homeLogSearchButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@android:color/transparent"
-            android:src="@android:drawable/ic_menu_search" />
+            android:importantForAccessibility="no"
+            android:src="@android:drawable/ic_menu_search"
+            tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
 
         <ImageButton
             android:id="@+id/homeLogAddButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@android:color/transparent"
-            android:src="@android:drawable/ic_menu_add" />
+            android:importantForAccessibility="no"
+            android:src="@android:drawable/ic_menu_add"
+            tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
 
     <LinearLayout
-        android:id="@+id/linearLayout2"
+        android:id="@+id/HomeFilterBox"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:paddingHorizontal="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout1">
+        app:layout_constraintTop_toBottomOf="@+id/HomeTitleBox">
 
         <ImageButton
             android:id="@+id/homeLogFilterButton"
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@android:color/transparent"
-            android:src="@android:drawable/ic_menu_sort_by_size" />
+            android:importantForAccessibility="no"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            tools:ignore="TouchTargetSizeCheck" />
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout3"
+        android:id="@+id/HomeMainContent"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="vertical"
         android:padding="16dp"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintBottom_toTopOf="@+id/selectPageBox"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+        app:layout_constraintTop_toBottomOf="@+id/HomeFilterBox">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/homeLogImagePlaylist1"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
-                android:background="#D9D9D9" />
+                android:background="#D9D9D9"
+                android:importantForAccessibility="no" />
 
             <TextView
                 android:id="@+id/homeLogTitlePlylist1"
@@ -102,7 +114,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Playlist 1"
+                android:text="@string/home_playlist_title1"
                 android:textSize="20sp" />
         </LinearLayout>
 
@@ -110,12 +122,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="20dp"
-            android:orientation="horizontal">
+            android:importantForAccessibility="no"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/homeLogImagePlaylist2"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:importantForAccessibility="no"
                 android:background="#D9D9D9" />
 
             <TextView
@@ -125,19 +140,22 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Playlist 2"
+                android:text="@string/home_playlist_title_2"
                 android:textSize="20sp" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:importantForAccessibility="no"
+            android:orientation="horizontal"
+            tools:ignore="UseCompoundDrawables">
 
             <ImageView
                 android:id="@+id/homeLogImagePlaylist3"
                 android:layout_width="60dp"
                 android:layout_height="60dp"
+                android:importantForAccessibility="no"
                 android:background="#D9D9D9" />
 
             <TextView
@@ -147,14 +165,14 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginStart="20dp"
                 android:fontFamily="sans-serif-condensed"
-                android:text="Playlist 3"
+                android:text="@string/home_plalist_title3"
                 android:textSize="20sp" />
         </LinearLayout>
 
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/linearLayout4"
+        android:id="@+id/selectPageBox"
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:layout_gravity="bottom"
@@ -165,40 +183,43 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <Button
-            android:id="@+id/homeLogButton1"
+            android:id="@+id/homeLogButtonHome"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#006860"
             android:fontFamily="sans-serif-condensed"
-            android:text="Home"
+            android:text="@string/home_button_home"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
         <Button
-            android:id="@+id/homeLogButton2"
+            android:id="@+id/homeLogButtonSearch"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#009688"
             android:fontFamily="sans-serif-condensed"
-            android:text="Search"
+            android:text="@string/home_button_search"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
-            android:id="@+id/homeLogButton3"
+            android:id="@+id/homeLogButtonProfile"
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:backgroundTint="#009688"
             android:fontFamily="sans-serif-condensed"
-            android:text="Profile"
+            android:text="@string/home_button_profile"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
     </LinearLayout>
 

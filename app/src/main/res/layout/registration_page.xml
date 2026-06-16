@@ -3,169 +3,178 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <TextView
-        android:id="@+id/RegistrationTitle"
+        android:id="@+id/RegTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Registrešāna"
+        android:text="@string/reg_title"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintSystemUi" />
 
     <EditText
-        android:id="@+id/EditTextRegistration1"
+        android:id="@+id/RegEditTextName"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="30dp"
+        android:autofillHints=""
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
         android:inputType="text"
-        android:text="Name"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegistrationTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/RegTitle"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/TextViewRegistration1"
+        android:id="@+id/RegTextViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Vārds"
+        android:text="@string/reg_text_name"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration1"
+        app:layout_constraintEnd_toStartOf="@+id/RegEditTextName"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration1" />
+        app:layout_constraintTop_toTopOf="@+id/RegEditTextName" />
 
     <EditText
-        android:id="@+id/EditTextRegistration2"
+        android:id="@+id/RegEditTextSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="30dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:fontFamily="sans-serif-condensed"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/RegEditTextName"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/RegEditTextUsername"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
+        android:importantForAutofill="no"
         android:inputType="text"
-        android:text="Surname"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration1" />
+        app:layout_constraintTop_toBottomOf="@+id/RegEditTextSurname"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/EditTextRegistration3"
+        android:id="@+id/RegEditTextPassword1"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
+        android:autofillHints=""
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
-        android:inputType="text"
-        android:text=" Username"
+        android:importantForAutofill="no"
+        android:inputType="text|textPassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration2" />
+        app:layout_constraintTop_toBottomOf="@+id/RegEditTextUsername"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <EditText
-        android:id="@+id/EditTextRegistration4"
-        android:layout_width="wrap_content"
-        android:layout_height="48dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginEnd="30dp"
-        android:ems="10"
-        android:fontFamily="sans-serif-condensed"
-        android:inputType="text"
-        android:text=" Password"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration3" />
-
-    <EditText
-        android:id="@+id/EditTextRegistration5"
+        android:id="@+id/RegEditTextPassword2"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
-        android:inputType="text"
-        android:text=" Password"
+        android:importantForAutofill="no"
+        android:inputType="text|textPassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration4" />
+        app:layout_constraintTop_toBottomOf="@+id/RegEditTextPassword1"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/TextViewRegistration2"
+        android:id="@+id/RegTextViewSurname"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Uzvārds"
+        android:text="@string/reg_text_surname"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration2"
+        app:layout_constraintEnd_toStartOf="@+id/RegEditTextSurname"
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration2" />
+        app:layout_constraintTop_toTopOf="@+id/RegEditTextSurname" />
 
     <TextView
-        android:id="@+id/TextViewRegistration3"
+        android:id="@+id/RegTextViewUsername"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Lietotājvārds"
+        android:text="@string/reg_text_username"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration2"
+        app:layout_constraintEnd_toStartOf="@+id/RegEditTextSurname"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration3" />
+        app:layout_constraintTop_toTopOf="@+id/RegEditTextUsername" />
 
     <TextView
-        android:id="@+id/TextViewRegistration4"
+        android:id="@+id/RegTextViewPassword1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Parole:"
+        android:text="@string/reg_text_password1"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration4"
+        app:layout_constraintEnd_toStartOf="@+id/RegEditTextPassword1"
         app:layout_constraintHorizontal_bias="0.89"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration4" />
+        app:layout_constraintTop_toTopOf="@+id/RegEditTextPassword1" />
 
     <TextView
-        android:id="@+id/TextViewRegistration5"
+        android:id="@+id/RegTextViewPassword2"
         android:layout_width="92dp"
         android:layout_height="55dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Parole (atkārtoti):"
+        android:text="@string/reg_text_password2"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration5"
+        app:layout_constraintEnd_toStartOf="@+id/RegEditTextPassword2"
         app:layout_constraintHorizontal_bias="0.773"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration5" />
+        app:layout_constraintTop_toTopOf="@+id/RegEditTextPassword2"
+        tools:ignore="TextSizeCheck" />
 
     <Button
-        android:id="@+id/RegistrationButton"
+        android:id="@+id/RegButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="30dp"
         android:backgroundTint="#009688"
         android:fontFamily="sans-serif-condensed"
-        android:text="Reģistreties"
+        android:text="@string/reg_button"
         android:textAllCaps="false"
         android:textSize="24sp"
         android:textStyle="bold"

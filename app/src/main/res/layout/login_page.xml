@@ -1,86 +1,92 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
 
     <TextView
-        android:id="@+id/RegistrationTitle"
+        android:id="@+id/LoginTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Lietotāja ielogošanas"
+        android:text="@string/login_title"
         android:textSize="30sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="VisualLintSystemUi" />
 
     <EditText
-        android:id="@+id/EditTextRegistration1"
+        android:id="@+id/LoginEditTextName"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="100dp"
         android:layout_marginEnd="30dp"
+        android:autofillHints=""
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
-        android:inputType="text"
-        android:text="Name"
+        android:inputType="text|textPersonName"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegistrationTitle" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginTitle"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/TextViewRegistration1"
+        android:id="@+id/LoginTextViewName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
+        android:autofillHints=""
         android:fontFamily="sans-serif-condensed"
-        android:text="Lietotājvārds:"
+        android:text="@string/login_text_name"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration1"
+        app:layout_constraintEnd_toStartOf="@+id/LoginEditTextName"
         app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration1" />
+        app:layout_constraintTop_toTopOf="@+id/LoginEditTextName" />
 
     <EditText
-        android:id="@+id/EditTextRegistration2"
+        android:id="@+id/LoginEditTextPassword"
         android:layout_width="wrap_content"
         android:layout_height="48dp"
         android:layout_marginTop="15dp"
         android:layout_marginEnd="30dp"
+        android:autofillHints=""
         android:ems="10"
         android:fontFamily="sans-serif-condensed"
-        android:inputType="text"
-        android:text="Name"
+        android:inputType="text|textPassword"
         android:textSize="20sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EditTextRegistration1" />
+        app:layout_constraintTop_toBottomOf="@+id/LoginEditTextName"
+        tools:ignore="LabelFor,SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/TextViewRegistration2"
+        android:id="@+id/LoginTextViewPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Parole:"
+        android:text="@string/login_text_password"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintEnd_toStartOf="@+id/EditTextRegistration2"
+        app:layout_constraintEnd_toStartOf="@+id/LoginEditTextPassword"
         app:layout_constraintHorizontal_bias="0.901"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/EditTextRegistration2" />
+        app:layout_constraintTop_toTopOf="@+id/LoginEditTextPassword" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/LoginToRegButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:backgroundTint="#009688"
         android:fontFamily="sans-serif-condensed"
-        android:text="Ja jums nav konta, varat reģistrēties!"
+        android:text="@string/login_to_reg_button"
         android:textSize="20sp"
         android:textStyle="bold"
         app:cornerRadius="5dp"
@@ -89,18 +95,18 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/RegistrationButton"
+        android:id="@+id/LoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="15dp"
         android:backgroundTint="#009688"
         android:fontFamily="sans-serif-condensed"
-        android:text="Ielogoties"
+        android:text="@string/login_button"
         android:textAllCaps="false"
         android:textSize="24sp"
         android:textStyle="bold"
         app:cornerRadius="5dp"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/LoginToRegButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
