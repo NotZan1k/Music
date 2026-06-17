@@ -5,8 +5,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.fragment.NavHostFragment;
+import androidx.navigation.Navigation;
 import com.example.music.databinding.LoginPageBinding;
 
 public class LoginFragment extends Fragment {
@@ -19,13 +20,15 @@ public class LoginFragment extends Fragment {
         return binding.getRoot();
     }
 
-    public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
+    @Override
+    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
+        binding.LoginButton.setOnClickListener(v -> 
+            Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_homeFragment));
+
         binding.LoginToRegButton.setOnClickListener(v ->
-            NavHostFragment.findNavController(LoginFragment.this)
-                    .navigate(R.id.action_loginFragment_to_registrationFragment)
-        );
+            Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_registrationFragment));
     }
 
     @Override
