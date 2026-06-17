@@ -18,14 +18,16 @@
         android:paddingHorizontal="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="UseCompoundDrawables">
 
         <ImageView
             android:id="@+id/searchUserImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:background="@android:drawable/btn_default"
-            android:contentDescription="User profile" />
+            android:importantForAccessibility="no"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/searchTitle"
@@ -33,7 +35,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
-            android:text="Search"
+            android:text="@string/search_title"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -63,11 +65,14 @@
             android:padding="8dp">
 
             <ImageView
+                android:id="@+id/searchImage"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
+                android:importantForAccessibility="no"
                 android:src="@android:drawable/ic_menu_search"
                 app:srcCompat="@android:drawable/ic_menu_search"
-                app:tint="#757575" />
+                app:tint="#757575"
+                tools:ignore="ImageContrastCheck" />
 
             <EditText
                 android:id="@+id/searchEditText"
@@ -76,9 +81,12 @@
                 android:layout_marginStart="8dp"
                 android:background="@null"
                 android:fontFamily="sans-serif-condensed"
-                android:hint="Ko tu vēlies klausīties?"
+                android:hint="@string/search_edittext_search_line"
+                android:importantForAccessibility="no"
+                android:importantForAutofill="no"
                 android:inputType="text"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                tools:ignore="TextContrastCheck,TouchTargetSizeCheck,VisualLintTextFieldSize" />
         </LinearLayout>
 
         <ImageButton
@@ -88,7 +96,8 @@
             android:layout_marginStart="8dp"
             android:background="@android:color/transparent"
             android:src="@android:drawable/ic_menu_sort_by_size"
-            app:tint="#000000" />
+            app:tint="#000000"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
     <!-- Search Results List -->
@@ -113,12 +122,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:importantForAccessibility="no"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="#D9D9D9" />
+                    android:background="#D9D9D9"
+                    android:importantForAccessibility="no" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -128,18 +139,20 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/searchMusicName1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Mūzikas nosaukums"
+                        android:text="@string/search_text_music_name_1"
                         android:textColor="#3F51B5"
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/searchMusicAuthor1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/search_text_music_author_1"
                         android:textColor="#757575"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -150,11 +163,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:importantForAccessibility="no"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:importantForAccessibility="no"
                     android:background="#D9D9D9" />
 
                 <LinearLayout
@@ -165,18 +180,20 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/searchMusicName2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Mūzikas nosaukums"
+                        android:text="@string/search_text_music_name_2"
                         android:textColor="#3F51B5"
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/searchMusicAuthor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/search_text_music_author_2"
                         android:textColor="#757575"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -187,11 +204,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:importantForAccessibility="no"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:importantForAccessibility="no"
                     android:background="#D9D9D9" />
 
                 <LinearLayout
@@ -202,18 +221,20 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/searchPlaylistName1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Playlist nosaukums"
+                        android:text="@string/search_text_playlist_name_1"
                         android:textColor="#3F51B5"
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/searchPlaylistAuthor1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/search_text_playlist_author_1"
                         android:textColor="#757575"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -229,6 +250,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:importantForAccessibility="no"
                     android:background="#D9D9D9" />
 
                 <LinearLayout
@@ -239,18 +261,20 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/searchPlaylistName2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Playlist nosaukums"
+                        android:text="@string/search_text_playlist_name_2"
                         android:textColor="#3F51B5"
                         android:textSize="20sp" />
 
                     <TextView
+                        android:id="@+id/searchPlaylistAuthor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/search_text_playlist_author_2"
                         android:textColor="#757575"
                         android:textSize="16sp" />
                 </LinearLayout>
@@ -275,10 +299,11 @@
             android:layout_weight="1"
             android:backgroundTint="#009688"
             android:fontFamily="sans-serif-condensed"
-            android:text="Home"
+            android:text="@string/search_button_home"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/searchButtonSearch"
@@ -287,10 +312,11 @@
             android:layout_weight="1"
             android:backgroundTint="#006860"
             android:fontFamily="sans-serif-condensed"
-            android:text="Search"
+            android:text="@string/search_button_search"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/searchButtonProfile"
@@ -299,10 +325,11 @@
             android:layout_weight="1"
             android:backgroundTint="#009688"
             android:fontFamily="sans-serif-condensed"
-            android:text="Profile"
+            android:text="@string/search_button_profile"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
     </LinearLayout>
 

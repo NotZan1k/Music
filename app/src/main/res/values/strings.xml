@@ -15,6 +15,7 @@
     <string name="reg_text_name">Vārds</string>
     <string name="reg_text_password1">Parole:</string>
     <string name="reg_text_password2">Parole (atkārtoti):</string>
+    <!--Home lapa-->
     <string name="home_button_home">Home</string>
     <string name="home_button_profile">Profile</string>
     <string name="home_button_search">Search</string>
@@ -22,6 +23,37 @@
     <string name="home_playlist_title1">Playlist 1</string>
     <string name="home_playlist_title2">Playlist 2</string>
     <string name="home_playlist_title3">Playlist 3</string>
+    <!--Search lapa-->
+    <string name="search_button_home">Home</string>
+    <string name="search_button_profile">Profile</string>
+    <string name="search_button_search">Search</string>
+    <string name="search_edittext_search_line">Ko tu vēlies klausīties?</string>
+    <string name="search_text_music_author_1">Autors</string>
+    <string name="search_text_music_author_2">Autors</string>
+    <string name="search_text_music_name_1">Mūzikas nosaukums</string>
+    <string name="search_text_music_name_2">Mūzikas nosaukums</string>
+    <string name="search_text_playlist_author_1">Autors</string>
+    <string name="search_text_playlist_author_2">Autors</string>
+    <string name="search_text_playlist_name_1">Playlist nosaukums</string>
+    <string name="search_text_playlist_name_2">Playlist nosaukums</string>
+    <string name="search_title">Search</string>
+    <!--Profile lapa-->
+    <string name="profile_button_home">Home</string>
+    <string name="profile_button_profile">Profile</string>
+    <string name="profile_button_search">Search</string>
+    <string name="profile_user_fullname">vārds uzvārds</string>
+    <string name="profile_playlist_author1">Autors</string>
+    <string name="profile_playlist_author2">Autors</string>
+    <string name="profile_playlist_author3">Autors</string>
+    <string name="profile_playlist_author4">Autors</string>
+    <string name="profile_playlist_name1">Playlist nosaukums</string>
+    <string name="profile_playlist_name2">Playlist nosaukums</string>
+    <string name="profile_playlist_name3">Playlist nosaukums</string>
+    <string name="profile_playlist_name4">Playlist nosaukums</string>
+    <string name="profile_playlist_list_title">Jūsu atskaņošanas saraksti :</string>
+    <string name="profile_button_stats">Skatīt klausīšanās statistiku</string>
+    <string name="profile_title">Profile</string>
+    <string name="profile_text_username">lietotājvārds</string>
 
 
 </resources>

@@ -24,7 +24,9 @@
             android:id="@+id/homeLogUserImage"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@android:drawable/btn_default" />
+            android:background="@android:drawable/btn_default"
+            android:importantForAccessibility="no"
+            tools:ignore="ImageContrastCheck" />
 
         <TextView
             android:id="@+id/homeLogTitle"
@@ -196,7 +198,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="0dp"
-            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck" />
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/homeLogButtonSearch"
@@ -209,7 +211,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="0dp"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/homeLogButtonProfile"
@@ -222,7 +224,7 @@
             android:textSize="24sp"
             android:textStyle="bold"
             app:cornerRadius="0dp"
-            tools:ignore="ButtonStyle" />
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
     </LinearLayout>
 

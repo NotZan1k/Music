@@ -30,7 +30,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="sans-serif-condensed"
-            android:text="Profile"
+            android:text="@string/profile_title"
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold" />
@@ -40,8 +40,10 @@
             android:layout_width="40dp"
             android:layout_height="40dp"
             android:background="@android:color/transparent"
+            android:importantForAccessibility="no"
             android:src="@android:drawable/btn_star_big_on"
-            app:tint="#FBC02D" />
+            app:tint="#FBC02D"
+            tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
     <!-- Profile Info Section (Fixed) -->
@@ -61,7 +63,8 @@
             android:layout_width="120dp"
             android:layout_height="120dp"
             android:background="@android:drawable/btn_default"
-            android:contentDescription="Profile Picture" />
+            android:importantForAccessibility="no"
+            tools:ignore="ImageContrastCheck" />
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -74,7 +77,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
-                android:text="lietotājvārds"
+                android:text="@string/profile_text_username"
                 android:textColor="#3F51B5"
                 android:textSize="24sp" />
 
@@ -83,7 +86,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:fontFamily="sans-serif-condensed"
-                android:text="vārds uzvārds"
+                android:text="@string/profile_user_fullname"
                 android:textColor="#757575"
                 android:textSize="18sp" />
         </LinearLayout>
@@ -96,7 +99,7 @@
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-condensed"
-        android:text="Jūsu atskaņošanas saraksti :"
+        android:text="@string/profile_playlist_list_title"
         android:textColor="#3F51B5"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -111,14 +114,15 @@
         android:layout_marginBottom="16dp"
         android:backgroundTint="#B0BEC5"
         android:fontFamily="sans-serif-condensed"
-        android:text="Skatīt klausīšanās statistiku"
+        android:text="@string/profile_button_stats"
         android:textAllCaps="false"
         android:textColor="#000000"
         android:textSize="18sp"
         app:cornerRadius="4dp"
         app:layout_constraintBottom_toTopOf="@+id/ProfileNavigationBottom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize" />
 
     <!-- Scrollable Playlists ONLY -->
     <ScrollView
@@ -148,7 +152,8 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:background="#D9D9D9" />
+                    android:background="#D9D9D9"
+                    android:importantForAccessibility="no" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -158,18 +163,20 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/profilePlaylistName1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Playlist nosaukums"
+                        android:text="@string/profile_playlist_name1"
                         android:textColor="#3F51B5"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/profilePlaylistAuthor1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/profile_playlist_author1"
                         android:textColor="#757575"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -180,11 +187,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
+                android:importantForAccessibility="no"
                 android:orientation="horizontal">
 
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:importantForAccessibility="no"
                     android:background="#D9D9D9" />
 
                 <LinearLayout
@@ -196,28 +205,24 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/profilePlaylistName2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Playlist nosaukums"
+                        android:text="@string/profile_playlist_name2"
                         android:textColor="#3F51B5"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/profilePlaylistAuthor2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/profile_playlist_author2"
                         android:textColor="#757575"
                         android:textSize="14sp" />
                 </LinearLayout>
 
-                <ImageView
-                    android:layout_width="24dp"
-                    android:layout_height="24dp"
-                    android:layout_gravity="center_vertical"
-                    android:src="@android:drawable/ic_menu_sort_by_size"
-                    app:tint="#3F51B5" />
             </LinearLayout>
 
             <!-- Playlist Item 3 -->
@@ -230,6 +235,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:importantForAccessibility="no"
                     android:background="#D9D9D9" />
 
                 <LinearLayout
@@ -240,18 +246,20 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/profilePlaylistName3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Playlist nosaukums"
+                        android:text="@string/profile_playlist_name3"
                         android:textColor="#3F51B5"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/profilePlaylistAuthor3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/profile_playlist_author3"
                         android:textColor="#757575"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -267,6 +275,7 @@
                 <ImageView
                     android:layout_width="60dp"
                     android:layout_height="60dp"
+                    android:importantForAccessibility="no"
                     android:background="#D9D9D9" />
 
                 <LinearLayout
@@ -277,18 +286,20 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/profilePlaylistName4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Playlist nosaukums"
+                        android:text="@string/profile_playlist_name4"
                         android:textColor="#3F51B5"
                         android:textSize="18sp" />
 
                     <TextView
+                        android:id="@+id/profilePlaylistAuthor4"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:fontFamily="sans-serif-condensed"
-                        android:text="Autors"
+                        android:text="@string/profile_playlist_author4"
                         android:textColor="#757575"
                         android:textSize="14sp" />
                 </LinearLayout>
@@ -313,10 +324,11 @@
             android:layout_weight="1"
             android:backgroundTint="#009688"
             android:fontFamily="sans-serif-condensed"
-            android:text="Home"
+            android:text="@string/profile_button_home"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/profileButtonSearch"
@@ -325,10 +337,11 @@
             android:layout_weight="1"
             android:backgroundTint="#009688"
             android:fontFamily="sans-serif-condensed"
-            android:text="Search"
+            android:text="@string/profile_button_search"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
 
         <Button
             android:id="@+id/profileButtonProfile"
@@ -337,10 +350,11 @@
             android:layout_weight="1"
             android:backgroundTint="#006860"
             android:fontFamily="sans-serif-condensed"
-            android:text="Profile"
+            android:text="@string/profile_button_profile"
             android:textSize="24sp"
             android:textStyle="bold"
-            app:cornerRadius="0dp" />
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,DuplicateSpeakableTextCheck,VisualLintButtonSize" />
 
     </LinearLayout>
 
