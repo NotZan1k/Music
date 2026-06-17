@@ -7,7 +7,6 @@
     android:background="#FFFFFF"
     android:fitsSystemWindows="true">
 
-    <!-- Header -->
     <LinearLayout
         android:id="@+id/profileHeader"
         android:layout_width="match_parent"
@@ -46,7 +45,6 @@
             tools:ignore="ImageContrastCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
-    <!-- Profile Info Section (Fixed) -->
     <LinearLayout
         android:id="@+id/profileInfoSection"
         android:layout_width="match_parent"
@@ -105,7 +103,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/profileInfoSection" />
 
-    <!-- Stats Button (Fixed at the bottom, above nav) -->
     <Button
         android:id="@+id/profileStatsButton"
         android:layout_width="match_parent"
@@ -124,7 +121,6 @@
         app:layout_constraintStart_toStartOf="parent"
         tools:ignore="VisualLintButtonSize" />
 
-    <!-- Scrollable Playlists ONLY -->
     <ScrollView
         android:id="@+id/profileScrollView"
         android:layout_width="match_parent"
@@ -142,7 +138,6 @@
             android:orientation="vertical"
             android:paddingHorizontal="16dp">
 
-            <!-- Playlist Item 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -182,7 +177,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Playlist Item 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -225,7 +219,6 @@
 
             </LinearLayout>
 
-            <!-- Playlist Item 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -265,7 +258,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Еще один для примера -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -308,7 +300,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation -->
     <LinearLayout
         android:id="@+id/ProfileNavigationBottom"
         android:layout_width="match_parent"

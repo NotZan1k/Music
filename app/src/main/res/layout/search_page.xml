@@ -7,7 +7,6 @@
     android:background="#FFFFFF"
     android:fitsSystemWindows="true">
 
-    <!-- Header -->
     <LinearLayout
         android:id="@+id/SearchHeader"
         android:layout_width="match_parent"
@@ -39,11 +38,8 @@
             android:textAlignment="center"
             android:textSize="30sp"
             android:textStyle="bold" />
-
-        <!-- Placeholder to balance the layout -->
     </LinearLayout>
 
-    <!-- Search Bar Area -->
     <LinearLayout
         android:id="@+id/searchBarContainer"
         android:layout_width="match_parent"
@@ -100,7 +96,6 @@
             tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck" />
     </LinearLayout>
 
-    <!-- Search Results List -->
     <ScrollView
         android:id="@+id/searchScrollView"
         android:layout_width="match_parent"
@@ -117,7 +112,6 @@
             android:orientation="vertical"
             android:padding="16dp">
 
-            <!-- Item 1 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -158,7 +152,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Item 2 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -199,7 +192,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Item 3 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -240,7 +232,6 @@
                 </LinearLayout>
             </LinearLayout>
 
-            <!-- Item 4 -->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -283,7 +274,6 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation -->
     <LinearLayout
         android:id="@+id/SearchNavigationBottom"
         android:layout_width="match_parent"
