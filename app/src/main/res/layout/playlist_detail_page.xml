@@ -18,7 +18,8 @@
         android:paddingHorizontal="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="DisableBaselineAlignment">
 
         <LinearLayout
             android:id="@+id/playlistSearchBar"
@@ -28,7 +29,8 @@
             android:background="@android:drawable/editbox_background_normal"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="10dp">
+            android:padding="10dp"
+            tools:ignore="UselessParent">
 
             <ImageView
                 android:id="@+id/plylistImageSearch"
