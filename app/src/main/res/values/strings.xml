@@ -54,6 +54,18 @@
     <string name="profile_button_stats">Skatīt klausīšanās statistiku</string>
     <string name="profile_title">Profile</string>
     <string name="profile_text_username">lietotājvārds</string>
+    <!--Playlist lapa-->
+    <string name="playlist_button_comment">Komentēt</string>
+    <string name="playlist_button_home">Home</string>
+    <string name="playlist_button_profile">Profile</string>
+    <string name="playlist_button_search">Search</string>
+    <string name="playlist_author">Autora lietotajvārds</string>
+    <string name="playlist_name">Plylist nosaukums</string>
+    <string name="playlist_search_bar">Ko tu vēlies atrasts?</string>
+    <string name="playlist_music_author1">Autors</string>
+    <string name="playlist_music_author2">Autors</string>
+    <string name="playlist_music_name1">Mūzikas nosaukums</string>
+    <string name="playlist_music_name2">Mūzikas nosaukums</string>
 
 
 </resources>

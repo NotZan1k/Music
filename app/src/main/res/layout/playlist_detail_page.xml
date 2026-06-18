@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true">
+
+    <!-- Top Bar: Back Button and Search Bar -->
+    <LinearLayout
+        android:id="@+id/playlistHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingHorizontal="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageButton
+            android:id="@+id/playlistBackButton"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:importantForAccessibility="no"
+            android:src="@android:drawable/ic_menu_revert"
+            app:tint="#000000"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <LinearLayout
+            android:id="@+id/playlistSearchBar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="1"
+            android:background="@android:drawable/editbox_background_normal"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp">
+
+            <ImageView
+                android:id="@+id/plylistImageSearch"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:importantForAccessibility="no"
+                android:src="@android:drawable/ic_menu_search"
+                app:tint="#757575"
+                tools:ignore="ImageContrastCheck" />
+
+            <EditText
+                android:id="@+id/playlistEditTextSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:background="@null"
+                android:fontFamily="sans-serif-condensed"
+                android:hint="@string/playlist_search_bar"
+                android:importantForAutofill="no"
+                android:inputType="text"
+                android:textSize="20sp"
+                tools:ignore="TouchTargetSizeCheck,TextContrastCheck,VisualLintTextFieldSize" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/playlistScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/playlistButtonComment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/playlistHeader">
+
+        <LinearLayout
+            android:id="@+id/playlistMainContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Playlist Header -->
+            <ImageView
+                android:id="@+id/playlistImage"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="16dp"
+                android:background="#D9D9D9"
+                android:importantForAccessibility="no" />
+
+            <TextView
+                android:id="@+id/playlistName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/playlist_name"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/playlistAuthor"
+                android:layout_width="252dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/playlist_author"
+                android:textAlignment="center"
+                android:textColor="#3F51B5"
+                android:textSize="18sp" />
+
+            <!-- Sort Icon / Tracks header area -->
+
+            <!-- Track List Items -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <ImageView
+                    android:id="@+id/playlistImagePlaylist1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#D9D9D9"
+                    android:importantForAccessibility="no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/playlistMusicName1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/playlist_music_name1"
+                        android:textColor="#3F51B5"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/playlistMusicAuthor1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/playlist_music_author1"
+                        android:textColor="#757575"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="8dp">
+
+                <ImageView
+                    android:id="@+id/playlistImagePlaylist2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="#D9D9D9"
+                    android:importantForAccessibility="no" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="16dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/playlistMusicName2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/playlist_music_name2"
+                        android:textColor="#3F51B5"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/playlistMusicAuthor2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:text="@string/playlist_music_author2"
+                        android:textColor="#757575"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Comment Button -->
+    <Button
+        android:id="@+id/playlistButtonComment"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:backgroundTint="#D1E4F5"
+        android:fontFamily="sans-serif-condensed"
+        android:text="@string/playlist_button_comment"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/playlistNavigationBottom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="VisualLintButtonSize" />
+
+    <!-- Bottom Navigation -->
+    <LinearLayout
+        android:id="@+id/playlistNavigationBottom"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/playlistButtonHome"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/playlist_button_home"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/playlistButtonSearch"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/playlist_button_search"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/playlistButtonProfile"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#009688"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/playlist_button_profile"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:cornerRadius="0dp"
+            tools:ignore="ButtonStyle,VisualLintButtonSize" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
