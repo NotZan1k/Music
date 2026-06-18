@@ -30,6 +30,12 @@ public class SearchFragment extends Fragment {
         
         binding.searchButtonProfile.setOnClickListener(v -> 
             Navigation.findNavController(v).navigate(R.id.action_searchFragment_to_profileFragment));
+
+        binding.searchPlaylist1.setOnClickListener(v ->
+                Navigation.findNavController(v).navigate(R.id.action_searchFragment_to_playlistFragment2));
+
+        binding.searchPlaylist2.setOnClickListener(v ->
+                Navigation.findNavController(v).navigate(R.id.action_searchFragment_to_playlistFragment2));
     }
 
     @Override

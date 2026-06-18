@@ -15,35 +15,24 @@
         android:layout_marginTop="10dp"
         android:gravity="center_vertical"
         android:orientation="horizontal"
-        android:paddingHorizontal="16dp"
+        android:paddingHorizontal="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
-        <ImageButton
-            android:id="@+id/playlistBackButton"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:background="?attr/selectableItemBackgroundBorderless"
-            android:importantForAccessibility="no"
-            android:src="@android:drawable/ic_menu_revert"
-            app:tint="#000000"
-            tools:ignore="SpeakableTextPresentCheck" />
 
         <LinearLayout
             android:id="@+id/playlistSearchBar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="8dp"
             android:layout_weight="1"
             android:background="@android:drawable/editbox_background_normal"
             android:gravity="center_vertical"
             android:orientation="horizontal"
-            android:padding="8dp">
+            android:padding="10dp">
 
             <ImageView
                 android:id="@+id/plylistImageSearch"
-                android:layout_width="35dp"
+                android:layout_width="wrap_content"
                 android:layout_height="35dp"
                 android:importantForAccessibility="no"
                 android:src="@android:drawable/ic_menu_search"

@@ -30,6 +30,15 @@ public class HomeFragment extends Fragment {
         
         binding.homeLogButtonProfile.setOnClickListener(v -> 
             Navigation.findNavController(v).navigate(R.id.action_homeFragment_to_profileFragment));
+
+        binding.homePlaylist1.setOnClickListener(v ->
+                Navigation.findNavController(v).navigate(R.id.action_homeFragment_to_playlistFragment2));
+
+        binding.homePlaylist2.setOnClickListener(v ->
+                Navigation.findNavController(v).navigate(R.id.action_homeFragment_to_playlistFragment2));
+
+        binding.homePlaylist3.setOnClickListener(v ->
+                Navigation.findNavController(v).navigate(R.id.action_homeFragment_to_playlistFragment2));
     }
 
     @Override

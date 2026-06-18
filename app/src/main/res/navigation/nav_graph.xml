@@ -41,6 +41,9 @@
         <action
             android:id="@+id/action_homeFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_playlistFragment2"
+            app:destination="@id/playlistFragment" />
     </fragment>
 
     <fragment
@@ -54,6 +57,9 @@
         <action
             android:id="@+id/action_searchFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_searchFragment_to_playlistFragment2"
+            app:destination="@id/playlistFragment" />
     </fragment>
 
     <fragment
@@ -67,6 +73,17 @@
         <action
             android:id="@+id/action_profileFragment_to_searchFragment"
             app:destination="@id/searchFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_playlistFragment2"
+            app:destination="@id/playlistFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.example.music.PlaylistFragment"
+        android:label="Playlist"
+        tools:layout="@layout/playlist_detail_page">
+
     </fragment>
 
 </navigation>

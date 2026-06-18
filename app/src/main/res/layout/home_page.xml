@@ -98,6 +98,7 @@
             android:padding="16dp">
 
             <LinearLayout
+                android:id="@+id/homePlaylist1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -123,6 +124,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/homePlaylist2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="20dp"
@@ -134,8 +136,8 @@
                     android:id="@+id/homeLogImagePlaylist2"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:importantForAccessibility="no"
-                    android:background="#D9D9D9" />
+                    android:background="#D9D9D9"
+                    android:importantForAccessibility="no" />
 
                 <TextView
                     android:id="@+id/homeLogTitlePlylist2"
@@ -149,6 +151,7 @@
             </LinearLayout>
 
             <LinearLayout
+                android:id="@+id/homePlaylist3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:importantForAccessibility="no"
@@ -159,8 +162,8 @@
                     android:id="@+id/homeLogImagePlaylist3"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:importantForAccessibility="no"
-                    android:background="#D9D9D9" />
+                    android:background="#D9D9D9"
+                    android:importantForAccessibility="no" />
 
                 <TextView
                     android:id="@+id/homeLogTitlePlylist3"
