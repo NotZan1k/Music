@@ -60,12 +60,16 @@
     <string name="playlist_button_profile">Profile</string>
     <string name="playlist_button_search">Search</string>
     <string name="playlist_author">Autora lietotajvārds</string>
-    <string name="playlist_name">Plylist nosaukums</string>
+    <string name="playlist_name">Playlist nosaukums</string>
     <string name="playlist_search_bar">Ko tu vēlies atrasts?</string>
     <string name="playlist_music_author1">Autors</string>
     <string name="playlist_music_author2">Autors</string>
     <string name="playlist_music_name1">Mūzikas nosaukums</string>
     <string name="playlist_music_name2">Mūzikas nosaukums</string>
-
+    <!-- Comments lapa -->
+    <string name="comments_title">Komentēt</string>
+    <string name="comments_hint">Uzrakstīt komentāru</string>
+    <string name="comments_author">Autora lietotājvārds</string>
+    <string name="comments_text">Komentārijs</string>
 
 </resources>
