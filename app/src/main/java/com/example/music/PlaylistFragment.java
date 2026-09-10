@@ -35,6 +35,10 @@ public class PlaylistFragment extends Fragment {
         binding.playlistButtonProfile.setOnClickListener(v -> 
             Navigation.findNavController(v).navigate(R.id.action_playlistFragment_to_profileFragment)
         );
+
+        binding.playlistButtonComment.setOnClickListener(v ->
+                Navigation.findNavController(v).navigate(R.id.action_playlistFragment_to_commentsFragment)
+        );
     }
 
     @Override

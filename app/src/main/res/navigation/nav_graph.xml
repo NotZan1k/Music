@@ -92,6 +92,15 @@
         <action
             android:id="@+id/action_playlistFragment_to_profileFragment"
             app:destination="@id/profileFragment" />
+        <action
+            android:id="@+id/action_playlistFragment_to_commentsFragment"
+            app:destination="@id/commentsFragment" />
     </fragment>
+
+    <fragment
+        android:id="@+id/commentsFragment"
+        android:name="com.example.music.CommentsFragment"
+        android:label="Comments"
+        tools:layout="@layout/comments_page" />
 
 </navigation>
