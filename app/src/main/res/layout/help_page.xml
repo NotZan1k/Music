@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Palīdzība"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="18sp"
+            android:text="ARA MUSIC lietošana:\n\n1. Reģistrējieties vai ielogojieties.\n2. Home sadaļā ar + izveidojiet atskaņošanas sarakstu.\n3. Search sadaļā izvēlieties Songs, lai meklētu dziesmas, un ar + pievienojiet tās savam sarakstam.\n4. Publisks saraksts vispirms saņem statusu “Gaida pārbaudi”; administrators to var apstiprināt vai noraidīt.\n5. Publicētus sarakstus var saglabāt izlasē ar ♡.\n6. Playlist sadaļā var atskaņot dziesmas; klausīšanās tiek uzskaitīta statistikā.\n7. Publiskiem sarakstiem var pievienot komentārus.\n8. Profile sadaļā skatiet Top 5 statistiku un ieslēdziet tumšo režīmu." />
+    </LinearLayout>
+</ScrollView>
